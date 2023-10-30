@@ -39,4 +39,4 @@ mvn spring-boot:run
 ```
 
 ## License
-This project is licensed under the Creative Commons License - see the LICENSE.md file for details.
+This project is licensed under the Creative Commons License.
