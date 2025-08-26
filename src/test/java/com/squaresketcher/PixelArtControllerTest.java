@@ -27,4 +27,21 @@ public class PixelArtControllerTest {
         mockMvc.perform(get("/api/pixel-art"))
                 .andExpect(status().isOk());
     }
+
+    @Test
+    public void getByIdShouldReturnOk() throws Exception {
+        PixelArt pixelArt = new PixelArt();
+        pixelArt.setId("1");
+        pixelArt.setName("test");
+        when(repository.findById("1")).thenReturn(java.util.Optional.of(pixelArt));
+        mockMvc.perform(get("/api/pixel-art/1"))
+                .andExpect(status().isOk());
+    }
+
+    @Test
+    public void getByIdShouldReturnNotFound() throws Exception {
+        when(repository.findById("1")).thenReturn(java.util.Optional.empty());
+        mockMvc.perform(get("/api/pixel-art/1"))
+                .andExpect(status().isNotFound());
+    }
 }
