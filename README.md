@@ -11,6 +11,8 @@ Create and save your pixel art with ease!
 
 SquareSketcher is a simple web application that allows users to craft pixel art images and save them for later use. Whether you're a professional designer or just someone who enjoys pixel art, SquareSketcher offers a straightforward platform to unleash your creativity.
 
+**Note:** This repository currently contains the backend implementation only. The frontend is not yet implemented.
+
 ## Features
 
 - Intuitive pixel canvas to draw on.
