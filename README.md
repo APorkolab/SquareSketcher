@@ -9,9 +9,9 @@ Create and save your pixel art with ease!
 
 ## Overview
 
-SquareSketcher is a simple web application that allows users to craft pixel art images and save them for later use. Whether you're a professional designer or just someone who enjoys pixel art, SquareSketcher offers a straightforward platform to unleash your creativity.
+SquareSketcher is a full-stack web application that allows users to craft pixel art images and save them for later use. Whether you're a professional designer or just someone who enjoys pixel art, SquareSketcher offers a straightforward platform to unleash your creativity.
 
-**Note:** This repository currently contains the backend implementation only. The frontend is not yet implemented.
+This repository contains both the frontend (Angular) and backend (Spring Boot) implementations.
 
 ## Features
 
@@ -22,23 +22,44 @@ SquareSketcher is a simple web application that allows users to craft pixel art 
 
 ## Getting Started
 
-1. **Clone the Repository**
+### Prerequisites
 
-```bash
-git clone https://github.com/APorkolab/SquareSketcher.git
-```
+- Java 17 or later
+- Maven
+- Node.js and npm
 
-2. **Navigate into the directory and install the dependencies**
+### Backend Setup
 
-```bash
-cd SquareSketcher
-mvn install
-```
+1.  **Navigate to the backend directory:**
+    ```bash
+    cd backend
+    ```
+2.  **Install dependencies:**
+    ```bash
+    mvn install
+    ```
+3.  **Run the application:**
+    ```bash
+    mvn spring-boot:run
+    ```
+    The backend will be running on `http://localhost:8080`.
 
-3. **Run the Application**
-```bash
-mvn spring-boot:run
-```
+### Frontend Setup
+
+1.  **Navigate to the frontend directory:**
+    ```bash
+    cd frontend
+    ```
+2.  **Install dependencies:**
+    ```bash
+    npm install
+    ```
+3.  **Run the application:**
+    ```bash
+    ng serve
+    ```
+    The frontend will be running on `http://localhost:4200`.
 
 ## License
+
 This project is licensed under the Creative Commons License.
