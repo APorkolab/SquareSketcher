@@ -20,6 +20,13 @@ This repository contains both the frontend (Angular) and backend (Spring Boot) i
 - Save and load pixel art projects.
 - Responsive design: create pixel art on any device.
 
+## Architecture
+
+The application is divided into two main parts:
+
+-   **Backend:** A Spring Boot application that provides a REST API for saving and loading pixel art. It uses MongoDB for data persistence.
+-   **Frontend:** An Angular single-page application (SPA) that provides the user interface for drawing and managing pixel art. It communicates with the backend via the REST API.
+
 ## Getting Started
 
 ### Prerequisites

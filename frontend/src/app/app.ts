@@ -3,6 +3,7 @@ import { CanvasComponent } from './components/canvas/canvas';
 import { ColorPaletteComponent } from './components/color-palette/color-palette';
 import { GalleryComponent } from './components/gallery/gallery';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 @Component({
   selector: 'app-root',
@@ -12,6 +13,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
     ColorPaletteComponent,
     GalleryComponent,
     MatToolbarModule,
+    MatSnackBarModule,
   ],
   templateUrl: './app.html',
   styleUrl: './app.scss'
